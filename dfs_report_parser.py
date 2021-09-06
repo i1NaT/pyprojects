@@ -1,5 +1,3 @@
-# import codecs
-# import builtins
 import re
 
 import pandas as pd
@@ -18,6 +16,4 @@ for d in fsub:
     slist.append(dic)
 ff = pd.DataFrame(slist)
 print(ff)
-# df = pd.concat(pd.DataFrame([l]) for l in slist)
-# print(df)
-# df.to_csv('dfs_report_20210831.csv', index=False, header=True)
+ff.to_csv('dfs_report_20210831.csv', index=True, header=True)
